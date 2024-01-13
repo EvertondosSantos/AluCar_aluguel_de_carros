@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.largura-80{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: white;
+    height: 5vh;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.sombreado{
+    background-color: rgba(0, 0, 0, 0.667);
+    height: 15vh;
+    position: sticky;
+    top:0;
+}
+.banner{
+    background-image: url("assets/capa.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+.sombreado>div{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.titulos{
+    color: white;
+    text-align: end;
+}
+
+main section{
+    padding: 50px 20px;
+}
+h3{
+    margin-bottom: 20px;
+}
+main p{
+    margin: 10px 0px;
+}
+.sobre figure{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sobre figure img{
+    width: 32%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+.sobre span{
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+.contato{
+    background-color: #d92121;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+.contato h3{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.667);
+}
+fieldset{
+    position: relative;
+    padding: 15px 20px;
+    margin: 20px 0px;
+}
+fieldset legend{
+    position: absolute;
+    background-color: white;
+    padding: 0px 2px;
+    top: -12px;
+    left: 25px;
+}
+
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+fieldset div input, fieldset div label, fieldset div select{
+    margin: 3px 0px;
+}
+fieldset div input, fieldset div select{
+    height: 30px;
+}
+form button{
+    padding: 10px 0px;
+    background-color: #d92121;
+    border: 1px black solid;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.171);
+    color: #d92121;
+    font-size: 14px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .largura-80{
+        width: 100%;
+    }
+}
